@@ -7,20 +7,27 @@ html,
 body {
   margin: 0;
   padding: 0;
+  font-size: 1.125rem;
 }
 
 /* Add styles here! */
 
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
 .max-width-wrapper {
   margin: auto;
-  max-width: 595px;
+  max-width: 900px;
   padding: 24px;
 }
 
 .intro-chunk {
   margin-bottom: 96px;
   margin-top: 128px;
-  width: 398px;
+  max-width: 400px;
 }
 
 .intro-chunk p {
@@ -47,14 +54,22 @@ main {
   border-bottom: 5px solid hsl(0deg, 0%, 40%);
   margin-left: -24px;
   margin-right: -24px;
-  padding: 8px 24px 24px;
+  padding: 24px;
+}
+
+.card p {
+  line-height: 1.4;
+}
+
+.card p:last-child {
+  margin-bottom: 0;
 }
 
 .indented-heading {
   background-color: hsl(45deg, 100%, 50%);
   border-bottom: 5px solid hsl(45deg, 100%, 40%);
-  display: inline-block;
   margin-left: -32px;
-  margin-top: 0;
+  margin-top: -16px;
   padding: 18px 32px;
+  width: fit-content;
 }
